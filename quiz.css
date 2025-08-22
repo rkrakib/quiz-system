@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+
+/* Decorative colored bars on both sides */
+.quiz-container::before,
+.quiz-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(180deg, #ff6f61, #d84315);
+}
+
+.quiz-container::before {
+    left: -20px;
+}
+
+.quiz-container::after {
+    right: -20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.timer {
+    font-weight: bold;
+    color: #e63946;
+}
+
+.question-list {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+    transition: background 0.3s;
+}
+
+.question:hover {
+    background: #f1f7ff;
+}
+
+label {
+    display: block;
+    margin: 6px 0;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+label:hover {
+    background: #eef2f7;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1976d2;
+}

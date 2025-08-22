@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e0f7fa;
+}
+
+.background {
+    position: relative;
+    min-height: 100vh;
+    background: url('vector.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+/* Dropdown arrow styling */
+/* .has-arrow {
+    position: relative;
+    padding-right: 10px; /* space for arrow */
+ */
+
+.has-arrow::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 25%;
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black; /* black arrow */
+}
+
+
+.nav-section a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grade-box {
+    display: inline-block;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pre-k {
+    background-color: #ff9800;
+    color: white;
+}
+
+.kindergarten {
+    background-color: #4caf50;
+    color: white;
+}
+
+.first-grade {
+    background-color: #9c27b0;
+    color: white;
+}
+
+.grade-box h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.grade-box p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.see-all {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2196f3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 120px;
+    margin-left: auto;
+}
+
+.see-all:hover {
+    background-color: #1976d2;
+}
+.skill-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 0px 15px 0px 0px;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.grade-icon {
+    background-color: rgb(7, 166, 169);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 40px;
+    height: 100px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.grade-icon7{
+    background-color: rgb(237, 140, 22);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 40px;
+    height: 100px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.grade-icon8 {
+    background-color: rgb(102, 19, 196);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 40px;
+    height: 100px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.skill-info {
+    flex: 1;
+}
+
+.skill-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skill-info .label {
+    color: gray;
+    font-style: italic;
+}
+
+.skill-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+
+
+.skill-button a {
+    background: rgb(7, 166, 169);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.skill-button7 a {
+    background: rgb(237, 140, 22);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.skill-button8 a {
+    background: rgb(102, 19, 196);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.skill-button a:hover {
+    background: darkorange;
+}
+.navbar {
+    display: flex;
+    align-items: center; /* vertical alignment */
+    background:white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    /* Removed justify-content */
+}
+
+.nav-left {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    padding-right: 20px;
+    border-right: 1px solid black; /* Separator after website name */
+}
+
+.nav-right {
+    display: flex;
+    margin-left: 20px; /* optional spacing after separator */
+  
+}
+
+.dropdown {
+    position: relative;
+    border-left: 1px solid black; /* Vertical separator */
+}
+
+.dropdown:first-child {
+    border-left: none; /* No separator before the first menu item */
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.dropdown a:hover {
+    background: #e0e0e0;
+}
+
+/* Dropdown menu styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    top: 35px;
+    left: 0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+}
+
+.dropdown-content a:hover {
+    background: #e0e0e0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

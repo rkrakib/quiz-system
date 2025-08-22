@@ -1,0 +1,99 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f4f6ff, #e9f0ff);
+    min-height: 100vh;
+}
+
+/* Universal Card Container */
+.container, .form-container, .dashboard {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+.container h2, 
+.form-container h2,
+.dashboard h2 {
+    margin-bottom: 20px;
+}
+
+/* Error and Success Messages */
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.message {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Buttons & Links */
+button,
+.dashboard a {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: background 0.2s ease;
+}
+
+button:hover,
+.dashboard a:hover {
+    background-color: #eee;
+}
+
+/* Back link styling */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
